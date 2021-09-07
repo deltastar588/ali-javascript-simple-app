@@ -5,7 +5,7 @@ let pokemonList=[ { name: "Gloom", type: "Poison", hight: 2.07, ImgUrl: "https:/
 ];
 
 for (let i=0; i < pokemonList.length; i++){
-    document.write( " " + pokemonList[i].name +"  " + pokemonList[i].hight + "<br>");
+    document.write( " " + pokemonList[i].name +" type: " + pokemonList[i].type+ " :" + " hight:" +pokemonList[i].hight + "<br>");
     document.write(`<img src = "${pokemonList[i].ImgUrl}" />`)
     if (pokemonList[i].hight > 3.0){
         console.log(pokemonList[i].name + "" +" It is the biggest Pokemons" );
